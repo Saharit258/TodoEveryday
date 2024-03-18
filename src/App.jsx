@@ -18,6 +18,12 @@ function App() {
     setTodos(todos.filter((todos) => todos.id !== id))
   }
 
+  const edits = (id) => {
+    const editts = todos.find((todos) => todos.id === id);
+    console.log(editts.text)
+
+  }
+
   return (
     <>
       <div>
@@ -28,7 +34,7 @@ function App() {
         {todos.map((todo) => (
           <tr key={todo.id}>
             <span>{todo.text}</span>
-            <button>Edit</button>
+            <button onClick={() => edits(todo.id)}>Edit</button>
             <button onClick={() => remove(todo.id)}>remove</button>
           </tr>
         ))}
