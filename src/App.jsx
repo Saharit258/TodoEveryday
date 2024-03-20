@@ -4,6 +4,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [news, setNews] = useState("");
   const [edit, setEdit] = useState({ id: null, text: ""})
+  
 
   const submit = () => {
     if(edit.id){
