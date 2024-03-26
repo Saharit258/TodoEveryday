@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Input, Button } from "antd";
-import Inputs from './Inputs';
-import List from './List';
+import Inputs from "./Inputs";
+import List from "./List";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -39,7 +39,7 @@ function App() {
         <Inputs addTodo={addTodo} news={news} setNews={setNews} />
       </div>
       <div>
-        <List todos={todos} remove={remove} edit={edit}/>
+        <List todos={todos} remove={remove} edit={edit} />
       </div>
     </div>
   );
